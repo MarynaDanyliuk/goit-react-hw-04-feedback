@@ -1,0 +1,14 @@
+.button-list {
+  display: flex;
+}
+
+.button {
+  width: 100px;
+  height: 24px;
+  font-size: small;
+  text-transform: capitalize;
+}
+
+.list_item:not(:last-child) {
+  margin-right: 30px;
+}
