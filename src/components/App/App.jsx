@@ -4,7 +4,7 @@ import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
 import { Statistics } from 'components/Statistics/Statistics';
 import { Notification } from 'components/Notification/Notification';
 
-const feedbackOptions = ['good', 'neutral', 'bad'];
+// const feedbackOptions = ['good', 'neutral', 'bad'];
 
 export default function App() {
   const [options, setCounter] = useState({
@@ -44,7 +44,7 @@ export default function App() {
     >
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={feedbackOptions}
+          options={Object.keys(options)}
           onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
